@@ -374,12 +374,19 @@ ol {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero.jpeg);
+    url(../images/hero-mb.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(46, 47, 66, 0.7);
+
+  background-image: -webkit-gradient(linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))),
+    -webkit-image-set(url(../images/hero-mb.webp) 1x);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 @media screen and (min-width: 1158px) {
   .overlay {
     height: 600px;
@@ -753,7 +760,8 @@ ol {
 }
 @media screen and (min-width: 1158px) {
   .portfolio-list {
-    gap: 48px 24px;
+    row-gap: 48px;
+    column-gap: 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -870,11 +878,7 @@ ol {
   color: var(--footer-text);
   text-align: left;
 }
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer-text {
-    text-align: center;
-  }
-}
+
 .footer-subtitle {
   font-weight: var(--fw-500);
   margin-top: 72px;
