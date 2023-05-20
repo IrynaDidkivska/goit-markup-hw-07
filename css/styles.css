@@ -373,6 +373,7 @@ ol {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero-mb.jpg);
   background-size: cover;
@@ -380,16 +381,119 @@ ol {
   background-repeat: no-repeat;
   background-color: rgba(46, 47, 66, 0.7);
 
-  background-image: -webkit-gradient(linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, rgba(46, 47, 66, 0.7)),
+      color-stop(100%, rgba(46, 47, 66, 0.7))
+    ),
     -webkit-image-set(url(../images/hero-mb.webp) 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-mb@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(46, 47, 66, 0.7);
+
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, rgba(46, 47, 66, 0.7)),
+      color-stop(100%, rgba(46, 47, 66, 0.7))
+    ),
+    -webkit-image-set(url(../images/hero-mb@2x.webp) 2x);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-tb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(46, 47, 66, 0.7);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, rgba(46, 47, 66, 0.7)),
+        color-stop(100%, rgba(46, 47, 66, 0.7))
+      ),
+      -webkit-image-set(url(../images/hero-tb.webp) 1x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-tb@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(46, 47, 66, 0.7);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, rgba(46, 47, 66, 0.7)),
+        color-stop(100%, rgba(46, 47, 66, 0.7))
+      ),
+      -webkit-image-set(url(../images/hero-tb@2x.webp) 2x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .overlay {
     height: 600px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-dt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(46, 47, 66, 0.7);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, rgba(46, 47, 66, 0.7)),
+        color-stop(100%, rgba(46, 47, 66, 0.7))
+      ),
+      -webkit-image-set(url(../images/hero-dt.webp) 1x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-dt@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(46, 47, 66, 0.7);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, rgba(46, 47, 66, 0.7)),
+        color-stop(100%, rgba(46, 47, 66, 0.7))
+      ),
+      -webkit-image-set(url(../images/hero-dt@2x.webp) 2x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 .hero-title {
