@@ -189,9 +189,14 @@ ol {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 100%;
-  overflow-y: scroll;
-  z-index: 10;
+  height: 100vh;
+  overflow: auto;
+  z-index: 1;
   padding-top: 80px;
   padding-left: 40px;
   padding-bottom: 40px;
@@ -214,9 +219,7 @@ ol {
 .mobile .modal-btn {
   background-color: var(--white-color);
 }
-.mobnav {
-  margin-bottom: 284px;
-}
+
 .mobnav-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -716,6 +719,11 @@ ol {
 @media screen and (min-width: 1158px) {
   .team-item {
     width: calc((100%-72px) / 4);
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-img {
+    margin: 0 auto;
   }
 }
 .team-content {

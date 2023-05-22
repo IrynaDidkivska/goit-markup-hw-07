@@ -12,7 +12,9 @@
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    
+    mobileMenu.classList.contains('is-open') ? document.body.style.overflow = "hidden" :document.body.style.overflow = "auto"  
+  //  bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -23,6 +25,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+   // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
