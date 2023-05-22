@@ -28,7 +28,79 @@
           <a href="./index.html" class="header-logo logo link"
             >Web<span class="header-studio">Studio</span></a
           >
+          <!-- Mobile menu -->
+          <button
+            class="burger-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger-icon" width="32" height="22" aria-level="Switcher for mobile menu">
+              <use class="burger-icon-open" href="./images/icons.svg#burger"></use>
+            </svg>
+          </button>
 
+          <div class="mobile js-menu-container" id="mobile-menu">
+            <button type="button" class="modal-btn js-close-menu">
+              <svg class="modal-icon" width="8" height="8">
+                <use href="./images/icons.svg#close-black"></use>
+              </svg>
+            </button>
+            <ul class="mobnav list">
+              <li class="mobnav-item">
+                <a href="./index.html" class="mobnav-link link">Studio</a>
+              </li>
+              <li class="mobnav-item">
+                <a href="./portfolio.html" class="mobnav-link link">Portfolio</a>
+              </li>
+              <li class="mobnav-item"><a href="" class="mobnav-link link">Contacts</a></li>
+            </ul>
+            <div class="address-mobwrapper">
+              <address class="mobaddress">
+                <ul class="list mobaddress-list">
+                  <li class="mobaddress-item">
+                    <a href="tel:+110001111111" class="link mobaddress-link">+11 (000) 111-11-11</a>
+                  </li>
+                  <li class="mobaddress-item">
+                    <a href="mailto:info@devstudio.com" class="link mobaddress-link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <ul class="socials mobsocials">
+              <li class="mobsocials-item">
+                <a href="https://www.instagram.com/" class="socials-link">
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobsocials-item">
+                <a href="https://twitter.com/" class="socials-link">
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobsocials-item">
+                <a href="https://www.facebook.com/" class="socials-link">
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobsocials-item">
+                <a href="https://www.linkedin.com/" target="_blank" class="socials-link">
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Nav -->
           <ul class="list nav-list">
             <li class="nav-item">
               <a href="./index.html" class="link nav-link" target="_blank">Studio</a>
@@ -626,6 +698,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
